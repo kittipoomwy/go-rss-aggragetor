@@ -7,6 +7,7 @@ RUN CGO_ENABLED=0 GOOS=linux go build -o /server ./cmd/server
 
 FROM alpine:3.19
 RUN apk --no-cache add ca-certificates tzdata && \
+    update-ca-certificates && \
     addgroup -S app && adduser -S -G app app
 WORKDIR /app
 COPY --from=builder /server .

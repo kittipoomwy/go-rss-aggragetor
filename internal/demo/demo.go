@@ -18,7 +18,6 @@ type seedFeed struct {
 var autoFollowFeeds = []seedFeed{
 	{name: "Hacker News", url: "https://news.ycombinator.com/rss"},
 	{name: "GitHub Blog", url: "https://github.blog/feed/"},
-	{name: "CSS-Tricks", url: "https://css-tricks.com/feed/"},
 	{name: "Go Blog", url: "https://go.dev/blog/feed.atom"},
 }
 
@@ -26,7 +25,6 @@ var autoFollowFeeds = []seedFeed{
 var templateFeeds = []seedFeed{
 	{name: "The Pragmatic Engineer", url: "https://newsletter.pragmaticengineer.com/feed"},
 	{name: "Netflix Tech Blog", url: "https://netflixtechblog.com/feed"},
-	{name: "Uber Engineering", url: "https://www.uber.com/en-US/blog/engineering/rss/"},
 	{name: "Cloudflare Blog", url: "https://blog.cloudflare.com/rss/"},
 	{name: "Docker Blog", url: "https://www.docker.com/blog/feed/"},
 	{name: "Dev.to", url: "https://dev.to/feed"},
